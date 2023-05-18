@@ -10,7 +10,19 @@
     c1.width = 700;
     c1.height = 900;
     
+       
+function my(){
+ 
+ const option = {
+  method: 'GET', 
+}
+   
+  fetch("/api/hello",option )
+     .then(response => response.json())
+     .then(response => alert(response.message))
+}   
     ct1.fillText("Forum",10,60)
+    my()
     </script>
   </body>
  </html>
